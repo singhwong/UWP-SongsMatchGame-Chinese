@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="SoundMatchGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SoundMatchGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
+    <Page.Resources>
+        <Storyboard x:Name="main_storyboard"
+                    Completed="main_storyboard_Completed">
+            <DoubleAnimationUsingKeyFrames EnableDependentAnimation="True"
+                                           Storyboard.TargetName="main_progressbar"
+                                           Storyboard.TargetProperty="(RangeBase.Value)">
+                <DiscreteDoubleKeyFrame KeyTime="0" Value="100"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:1" Value="90"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:2" Value="80"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:3" Value="70"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:4" Value="60"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:5" Value="50"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:6" Value="40"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:7" Value="30"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:8" Value="20"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:9" Value="10"/>
+                <DiscreteDoubleKeyFrame KeyTime="0:0:10" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <ProgressBar Name="main_progressbar"
+                     Height="70"
+                     Margin="20"
+                     Maximum="100"
+                     Minimum="0"
+                     Value="100"
+                     Background="White"
+                     Foreground="SkyBlue"/>
+            <TextBlock Name="help_textblock"
+                       FontSize="30"
+                       HorizontalAlignment="Center"/>
+            <MediaElement Name="main_mediaElement"
+                          AutoPlay="True"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Margin="20">
+            <GridView Name="main_gridview"
+                      IsItemClickEnabled="True"
+                      ItemsSource="{x:Bind Songs}"                     
+                      ItemClick="main_gridview_ItemClick">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Song">
+                        <Image Height="80"
+                               Width="80"
+                               Margin="3"
+                               Source="{x:Bind AlbumCover}"/>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+            <TextBlock Name="score_textblock"
+                       FontSize="15"/>
+            <TextBlock Name="title_textblok"
+                       FontSize="15"/>
+            <TextBlock Name="artist_textblock"
+                       FontSize="15"/>
+            <TextBlock Name="album_textblok"
+                       FontSize="15"/>
+          
+            <Button Name="refresh_button"
+                    Height="45"
+                    Width="100"
+                    FontSize="20"
+                    HorizontalAlignment="Center"
+                    Click="refresh_button_Click"/>
+        </StackPanel>
+        <ProgressRing Name="main_progressing"
+                      Grid.RowSpan="2"
+                      Height="80"
+                      Width="80"
+                      Foreground="DeepSkyBlue"
+                      VerticalAlignment="Center"/>
+    </Grid>
+</Page>
