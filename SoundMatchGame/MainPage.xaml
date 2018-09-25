@@ -82,8 +82,8 @@
                     Grid.Row="2"
                     HorizontalAlignment="Center"
                     Click="refresh_button_Click"/>
-        <UI:AdControl ApplicationId="3f83fe91-d6be-434d-a0ae-7351c5a997f1"
- 		              AdUnitId="test"
+        <UI:AdControl ApplicationId="9n0zsjzv6nqf"
+ 		              AdUnitId="1100032252"
                       Grid.Row="3"
  		              HorizontalAlignment="left"
  		              Width="300"

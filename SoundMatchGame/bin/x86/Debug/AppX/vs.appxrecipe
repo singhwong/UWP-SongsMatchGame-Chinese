@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\wang\source\repos\UWP-SongsMatchGame-Chinese\SoundMatchGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-09-25T02:07:01.434</Modified>
+      <Modified>2018-09-25T08:42:43.586</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\wang\source\repos\UWP-SongsMatchGame-Chinese\SoundMatchGame\bin\x86\Debug\SoundMatchGame.exe">
       <PackagePath>entrypoint\SoundMatchGame.exe</PackagePath>
-      <Modified>2018-09-25T02:07:00.742</Modified>
+      <Modified>2018-09-25T08:42:42.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -547,11 +547,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wang\source\repos\UWP-SongsMatchGame-Chinese\SoundMatchGame\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-09-25T02:07:00.544</Modified>
+      <Modified>2018-09-25T08:42:42.352</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wang\source\repos\UWP-SongsMatchGame-Chinese\SoundMatchGame\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2018-09-25T02:07:00.545</Modified>
+      <Modified>2018-09-25T08:42:42.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.17134.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -568,7 +568,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\wang\source\repos\UWP-SongsMatchGame-Chinese\SoundMatchGame\bin\x86\Debug\Core\SoundMatchGame.exe">
       <PackagePath>SoundMatchGame.exe</PackagePath>
-      <Modified>2018-09-25T02:07:01.414</Modified>
+      <Modified>2018-09-25T08:42:43.572</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
