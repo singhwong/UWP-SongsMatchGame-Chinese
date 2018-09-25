@@ -5,6 +5,7 @@
     xmlns:local="using:SoundMatchGame"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
                         >
@@ -31,7 +32,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <StackPanel>
             <ProgressBar x:ConnectionId='11' Name="main_progressbar"
@@ -50,7 +53,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1"
                     Margin="20">
-            <GridView x:ConnectionId='4' Name="main_gridview"
+            <GridView x:ConnectionId='5' Name="main_gridview"
                       IsItemClickEnabled="True"
                                                                        
                                                          >
@@ -63,24 +66,31 @@
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
-            <TextBlock x:ConnectionId='5' Name="score_textblock"
+            <TextBlock x:ConnectionId='6' Name="score_textblock"
                        FontSize="15"/>
-            <TextBlock x:ConnectionId='6' Name="title_textblok"
+            <TextBlock x:ConnectionId='7' Name="title_textblok"
                        FontSize="15"/>
-            <TextBlock x:ConnectionId='7' Name="artist_textblock"
+            <TextBlock x:ConnectionId='8' Name="artist_textblock"
                        FontSize="15"/>
-            <TextBlock x:ConnectionId='8' Name="album_textblok"
+            <TextBlock x:ConnectionId='9' Name="album_textblok"
                        FontSize="15"/>
-          
-            <Button x:ConnectionId='9' Name="refresh_button"
+        </StackPanel>
+        <Button x:ConnectionId='3' Name="refresh_button"
                     Height="45"
                     Width="100"
                     FontSize="20"
+                    Grid.Row="2"
                     HorizontalAlignment="Center"
                                                 />
-        </StackPanel>
-        <ProgressRing x:ConnectionId='3' Name="main_progressing"
-                      Grid.RowSpan="2"
+        <UI:AdControl ApplicationId="3f83fe91-d6be-434d-a0ae-7351c5a997f1"
+ 		              AdUnitId="test"
+                      Grid.Row="3"
+ 		              HorizontalAlignment="left"
+ 		              Width="300"
+ 		              Height="250"
+ 		              VerticalAlignment="Bottom"/>
+        <ProgressRing x:ConnectionId='4' Name="main_progressing"
+                      Grid.RowSpan="4"
                       Height="80"
                       Width="80"
                       Foreground="DeepSkyBlue"

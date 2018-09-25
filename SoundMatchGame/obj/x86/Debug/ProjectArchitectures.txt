@@ -1,1 +1,1 @@
-C:\Users\singhwong\source\repos\SoundMatchGame\SoundMatchGame\SoundMatchGame.csproj;x86
+C:\Users\wang\source\repos\UWP-SongsMatchGame-Chinese\SoundMatchGame\SoundMatchGame.csproj;x86

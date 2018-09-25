@@ -173,7 +173,6 @@ namespace SoundMatchGame
             refresh_button.Content = "开始游戏";
             help_textblock.Text = "歌曲搭配游戏";
             //GetSongs();
-
         }
         private async void GetSongs()
         {

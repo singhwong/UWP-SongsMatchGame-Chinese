@@ -27500,31 +27500,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\singhwong\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
+    "C:\\Users\\wang\\.nuget\\packages\\": {},
+    "C:\\Program Files\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\singhwong\\source\\repos\\SoundMatchGame\\SoundMatchGame\\SoundMatchGame.csproj",
+      "projectUniqueName": "C:\\Users\\wang\\source\\repos\\UWP-SongsMatchGame-Chinese\\SoundMatchGame\\SoundMatchGame.csproj",
       "projectName": "SoundMatchGame",
-      "projectPath": "C:\\Users\\singhwong\\source\\repos\\SoundMatchGame\\SoundMatchGame\\SoundMatchGame.csproj",
-      "packagesPath": "C:\\Users\\singhwong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\singhwong\\source\\repos\\SoundMatchGame\\SoundMatchGame\\obj\\",
+      "projectPath": "C:\\Users\\wang\\source\\repos\\UWP-SongsMatchGame-Chinese\\SoundMatchGame\\SoundMatchGame.csproj",
+      "packagesPath": "C:\\Users\\wang\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wang\\source\\repos\\UWP-SongsMatchGame-Chinese\\SoundMatchGame\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        "C:\\Program Files\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\singhwong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\wang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "uap10.0.15063"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

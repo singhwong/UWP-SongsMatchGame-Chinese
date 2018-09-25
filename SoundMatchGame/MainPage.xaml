@@ -5,6 +5,7 @@
     xmlns:local="using:SoundMatchGame"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     Loaded="Page_Loaded">
@@ -31,7 +32,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <StackPanel>
             <ProgressBar Name="main_progressbar"
@@ -71,16 +74,23 @@
                        FontSize="15"/>
             <TextBlock Name="album_textblok"
                        FontSize="15"/>
-          
-            <Button Name="refresh_button"
+        </StackPanel>
+        <Button Name="refresh_button"
                     Height="45"
                     Width="100"
                     FontSize="20"
+                    Grid.Row="2"
                     HorizontalAlignment="Center"
                     Click="refresh_button_Click"/>
-        </StackPanel>
+        <UI:AdControl ApplicationId="3f83fe91-d6be-434d-a0ae-7351c5a997f1"
+ 		              AdUnitId="test"
+                      Grid.Row="3"
+ 		              HorizontalAlignment="left"
+ 		              Width="300"
+ 		              Height="250"
+ 		              VerticalAlignment="Bottom"/>
         <ProgressRing Name="main_progressing"
-                      Grid.RowSpan="2"
+                      Grid.RowSpan="4"
                       Height="80"
                       Width="80"
                       Foreground="DeepSkyBlue"
